@@ -4,11 +4,16 @@ This set of Arena modules enables a user to authenticate in Arena using their Fa
 
 ## Getting started
 
-Clone the repository into your working Arena directory, or download the zip or tarball and unzip it into your working Arena web directory.
+Clone the repository into your working Arena directory, or download the zip or tarball and unzip it into your working Arena web directory. The wiki on Redmine has [some helpful information](http://redmine.refreshcache.com/projects/cccev-web-collection/wiki/Login_Modules) on how this functionality lays out.
 
 ### Dependencies
 
-This module set does have an external dependency on the [Facebook C# API in NuGet](http://nuget.org/packages/Facebook/5.2.1.0). Please note that this is an older version. Installing the latest (6.1.*) might require some refactoring to get it to work properly.
+This module set does have an external dependency on the [Facebook C# API in NuGet](http://nuget.org/packages/Facebook/5.2.1.0). Please note that this is an older version. Installing the latest (6.1.*) might require some refactoring to get it to work properly. This can be installed via the NuGet Package Manager that comes integrated with Visual Studio.
+
+The web service and module code files also reference a couple additional dependencies on Central's `FrameworkUtils` and `DataUtils` projects. `FrameworkUtils` has a dependency on `DataUtils`. The source code for those projects can be found here:
+
+* [DataUtils](http://redmine.refreshcache.com/projects/cccevdatautils/repository)
+* [FrameworkUtils](http://redmine.refreshcache.com/projects/cccevframeworkutils/repository)
 
 ### Modifying the client source code & running tests
 
